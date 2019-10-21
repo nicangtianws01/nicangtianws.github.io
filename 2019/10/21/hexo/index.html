@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Nicangtianws&#39; Blog</title>
+    <title>hexo+github博客教程 - Nicangtianws&#39; Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    
+    <meta name="description" content="安装了nodeJS、安装并配置好git：    一、设置全局账号：    命令：git config –global user.name “用户名”    git config –global us,"> 
     <meta name="author" content="nicangtianws"> 
     <link rel="alternative" href="atom.xml" title="Nicangtianws&#39; Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -31,115 +31,98 @@
 <body class="loading">
     <span id="config-title" style="display:none">Nicangtianws&#39; Blog</span>
     <div id="loader"></div>
-    <div class="nav">
-    <ul id="menu-menu" class="menu">
-        
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/whoami/" title="Whoami" target="_blank" rel="noopener">Whoami</a>
-        </li>
-        
-        <li class="  menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="https://github.com/Fechin" title="Github" target="_blank" rel="noopener">Github</a>
-        </li>
-        
-        <li class="  menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="https://twitter.com/FechinLi" title="Twitter" target="_blank" rel="noopener">Twitter</a>
-        </li>
-        
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/categories/" title="分类" target="_blank" rel="noopener">分类</a>
-        </li>
-        
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/archives/" title="归档" target="_blank" rel="noopener">归档</a>
-        </li>
-        
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/tags/" title="标签云" target="_blank" rel="noopener">标签云</a>
-        </li>
-        
-    </ul>
-    <p id="copyright">
-        &copy; 2019 nicangtianws.
-        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
-        Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a>
-        by Fechin
-    </p>
-</div>
-
-<div id="container">
-    
-<div id="screen">
-    <div id="mark">
-        <div class="layer" data-depth="0.4">
-            <img src="/img/welcome-cover.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
-        </div>
-    </div>
-    <div id="vibrant">
-        <svg viewBox="0 0 2880 1620" height="100%" preserveAspectRatio="xMaxYMax slice">
-            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
-        </svg>
-        <div></div>
-    </div>
-    <div id="header">
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://nicangtianws.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">hexo+github博客教程</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
         <div>
-            <a class="image-logo" href="/"></a>
-            <div class="icon-menu switchmenu"></div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
         </div>
     </div>
-    
-    <div id="post0">
-        <p>十月 21, 2019</p>
-        <h2><a href="/2019/10/21/hexo/" title="hexo+github博客教程" class="posttitle">hexo+github博客教程</a></h2>
-        <p class="summary">安装了nodeJS、安装并配置好git：    一、设置全局账号：    命令：git config –globa...</p>
-    </div>
-    
+    <div class="scrollbar"></div>
 </div>
 
-    <div id="primary">
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">hexo+github博客教程</h1>
+        <div class="stuff">
+            <span>十月 21, 2019</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%A0%87%E7%AD%BE1/" rel="tag">标签1</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>安装了nodeJS、安装并配置好git：<br>    一、设置全局账号：<br>    命令：git config –global user.name “用户名”<br>    git config –global user.email “邮箱”</p>
+<pre><code>二、添加本机sshkey
+SSh key
+
+1.生成ssh key：
+命令：ssh-keygen -t rsa -C &quot;邮箱&quot;
+
+生成的ssh key在${user.home}/.ssh文件夹中
+github.com帐号settings中添加ssh key，将生成的id_rsa.pub文件内容复制过去
+
+2.查看是否添加成功：
+命令：ssh -T git@github.com
+
+3.github创建名为：用户名.github.io的仓库</code></pre><p>安装hexo：<br>    打开git bash并执行：npm install -g hexo</p>
+<p>初始化：<br>    选定hexo博客文件目录存放位置，右键打开git bash，执行：hexo init</p>
+<p>更换主题：<br>    在themes目录打开git bash执行：git clone <a href="https://github.com/Fechin/hexo-theme-diaspora" target="_blank" rel="noopener">https://github.com/Fechin/hexo-theme-diaspora</a></p>
+<p>更改hexo的配置文件：_config.yml<br>    deploy:<br>    type: git<br>    repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:用户名/用户名.github.io.git<br>    branch: master</p>
+<p>上传到github：<br>    hexo g生成博客<br>    hexo d上传到github</p>
+<p>修改文章模板（scaffolds文件夹下）：<br>    —<br>    title: My awesome title<br>    date: 2016-10-12 18:38:45<br>    categories:<br>        - 分类1<br>        - 分类2<br>    tags:<br>        - 标签1<br>        - 标签2<br>    mp3: <a href="http://domain.com/awesome.mp3" target="_blank" rel="noopener">http://domain.com/awesome.mp3</a><br>    cover: <a href="http://domain.com/awesome.jpg" target="_blank" rel="noopener">http://domain.com/awesome.jpg</a><br>    —</p>
+<p>发布文章：<br>    hexo new “文章标题（之后可以在文件中修改）”</p>
+<p>创建分类页:<br>    hexo new page categories</p>
+<p>创建标签页:<br>    hexo new page tags</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
         
-<div class="post">
-    <a href="/2019/10/21/nginx-flash-exit/" title="nginx windows端闪退bug01">
-        <img src="/img/cover.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>十月 21, 2019</p>
-        <h3><a href="/2019/10/21/nginx-flash-exit/" title="nginx windows端闪退bug01" class="posttitle">nginx windows端闪退bug01</a></h3>
-        <p>nginx windows could not build server_names_hash, you should increase server_n...</p>
-    </div>
-</div>
-
-
-<div class="post">
-    <a href="/2019/10/21/spring-suite-tool01/" title="sts弹出can't find tools.jar怎么办">
-        <img src="/img/cover.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>十月 21, 2019</p>
-        <h3><a href="/2019/10/21/spring-suite-tool01/" title="sts弹出can&#39;t find tools.jar怎么办" class="posttitle">sts弹出can&#39;t find tools.jar怎么办</a></h3>
-        <p>SpringToolSuite4.ini文件在openFile下面添加如下内容：-vmyour jdk home\bin\javaw.exe注意：不是jre
-</p>
-    </div>
-</div>
-
-
-<div class="post">
-    <a href="/2019/10/21/hello-world/" title="Hello World">
-        <img src="/img/cover.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>十月 21, 2019</p>
-        <h3><a href="/2019/10/21/hello-world/" title="Hello World" class="posttitle">Hello World</a></h3>
-        <p>Welcome to Hexo! This is your very first post. Check documentation for more i...</p>
-    </div>
-</div>
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
 
 
     </div>
     
 </div>
-<div id="preview"></div>
 
+
+    </div>
+</div>
 </body>
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
